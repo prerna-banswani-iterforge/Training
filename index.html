@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music App</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 <body>
     <!-- SideBar -->
@@ -14,8 +14,12 @@
 
         <nav>
             <ul>
-                <li class="active">Home</li>
-                <li>Explore</li>
+                <li class="active">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="explore.html">Explore</a>
+                </li>
                 <li>Library</li>
                 <li>Favorites</li>            
             </ul>
@@ -42,6 +46,22 @@
             <button>Sad</button>
         </section>
 
+        <section class="hero">
+            <div class="hero-img">
+                <img src="https://picsum.photos/200?9" alt="music-banner">
+            </div>
+
+            <div class="hero-content">
+                <h3>Now Playing</h1>
+                <p>
+                    <Strong>Sitaare</Strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, maxime itaque aliquid voluptates labore facilis.
+                </p>
+                <a href="" class="cta-btn"> Listen Now</a>
+                
+
+            </div>
+        </section>
+
         <section class="playlist-section">
 
         <h2>Trending Community Playlists</h2>
@@ -49,7 +69,18 @@
         <div class="card-container">
 
             <article class="music-card">
-                <img src="https://picsum.photos/200?1">
+                <div class="card-img">
+                    <img src="https://picsum.photos/200?1">
+    
+                    <div class="overlay">
+                        <button class="ply-btn">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                        </button>
+                        <button class="dots-btn">
+                            <span class="material-symbols-outlined">more_vert</span>
+                        </button>
+                    </div>
+                </div>
                 <h3>Love Songs</h3>
                 <p>9.1M views</p>
             </article>
@@ -65,7 +96,45 @@
                 <h3>Workout Mix</h3>
                 <p>7M views</p>
             </article>
+                        <article class="music-card">
+                <img src="https://picsum.photos/200?4">
+                <h3>Old Classics</h3>
+                <p>3.2M views</p>
+            </article>
 
+            <article class="music-card">
+                <img src="https://picsum.photos/200?5">
+                <h3>Feel Good</h3>
+                <p>8M views</p>
+            </article>
+        </div>
+        </section>
+
+        <section class="playlist-section">
+            <h2>Recently Played</h2>
+
+            <div class="card-container">
+                <article class="music-card">
+                    <img src="https://picsum.photos/200?6">
+                    <h3>Feel Good</h3>
+                    <p>8M views</p>
+                </article>
+
+                <article class="music-card">
+                    <img src="https://picsum.photos/200?7">
+                    <h3>Feel Good</h3>
+                    <p>8M views</p>
+                </article>
+
+                <article class="music-card">
+                    <img src="https://picsum.photos/200?8">
+                    <h3>Feel Good</h3>
+                    <p>8M views</p>
+                </article>
+
+            </div>
+
+        </section>
 
     </main>
 </body>
