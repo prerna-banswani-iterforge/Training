@@ -1,0 +1,102 @@
+body {
+    background: #f3f3f3;
+    max-width: 1440px;
+
+
+    .page {
+        max-width: 1440px;
+        margin: auto;
+
+        div.RXlogo {
+            /* background: red; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+
+            img.logo {
+                /* position: absolute; */
+                max-width: 1440px;
+                width: 543px;
+                height: 122px;
+                align-self: center;
+
+
+
+            }
+        }
+
+        .sub-header {
+            background: #F16E00 0% 0% no-repeat padding-box;
+            padding: 14px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 22px;
+
+        }
+
+        .sub-header button {
+            border: none;
+            background: #F16E00;
+            color: white;
+        }
+
+        .trt {
+            display: flex;
+            gap: 32px;
+            background-image: url("https://s7media.vitaminshoppe.com/is/image/VitaminShoppe/TRT-WHRx-766493_HeaderDesktop-1?$WHRX_TRT_SplitLeft_Desktop$");
+
+            .trt_content {
+                width: 823px;
+                margin-left: 70px;
+
+                h2 {
+                    text-align: left;
+                    font: normal normal medium 52px/68px Roboto Slab;
+                    letter-spacing: 0px;
+                    color: #012269;
+                    margin-bottom: 25px;
+                }
+
+                p {
+                    text-align: left;
+                    letter-spacing: 0px;
+                    color: #012169;
+                }
+
+                .get-started{
+                    
+                }
+            }
+
+
+
+            .trt-img img {
+                width: 569px;
+                height: 664px;
+            }
+
+            .trt-list p{
+                display: flex;
+                gap: 17.35px;
+                align-items: center;
+            }
+
+
+            .tick-logo {
+                width: 25px;
+                height: 25px;
+                /* UI Properties */
+                background: var(--unnamed-color-ff6900) 0% 0% no-repeat padding-box;
+                background: #FF6900 0% 0% no-repeat padding-box;
+                opacity: 1;
+                border-radius: 50%;
+
+            }
+        }
+
+
+    }
+
+}
