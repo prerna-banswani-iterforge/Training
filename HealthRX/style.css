@@ -63,11 +63,16 @@ body {
                     text-align: left;
                     letter-spacing: 0px;
                     color: #012169;
+
                 }
 
-                .get-started{
-                    
+                div .get-started{
+                    border-radius: 20px;
+                    padding: 15px 68px;
+                    color: white;
+                    background: #0458AD 0% 0% no-repeat padding-box;
                 }
+
             }
 
 
@@ -81,13 +86,13 @@ body {
                 display: flex;
                 gap: 17.35px;
                 align-items: center;
+                margin-bottom: 26px;
             }
 
 
             .tick-logo {
                 width: 25px;
                 height: 25px;
-                /* UI Properties */
                 background: var(--unnamed-color-ff6900) 0% 0% no-repeat padding-box;
                 background: #FF6900 0% 0% no-repeat padding-box;
                 opacity: 1;
