@@ -1,0 +1,53 @@
+body{
+    margin:0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:#e6e6e6;
+} 
+
+/* FULL SCREEN CONTAINER */
+.page{
+    height:100vh;              
+    display:flex;
+    justify-content:center;    
+    align-items:center;        
+}
+
+.login-container{
+    width:450px;
+    background:white;
+    padding:40px;
+    border-radius:8px;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    width:90%;
+    padding:12px;
+    margin:10px 0 20px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+
+input:focus{
+    outline:none;
+    border: 2px solid black; 
+}
+
+
+a{
+    display: block;
+    text-align: center;
+    width:90%;
+    margin: 10px 0 20px;
+    padding:12px;
+    background:#165ca5;
+    color:white;
+    border:2px solid;
+    border-radius:6px;
+    cursor:pointer;
+    text-decoration: none;
+}
