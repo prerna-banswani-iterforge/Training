@@ -1,6 +1,9 @@
 body {
-    background: #f3f3f3;
+    /* background: #f3f3f3; */
+    background: white;
     max-width: 1440px;
+    margin: 0;
+    height: 100%;
 
 
     .page {
@@ -44,8 +47,11 @@ body {
 
         .trt {
             display: flex;
+            position: relative;
             gap: 32px;
             background-image: url("https://s7media.vitaminshoppe.com/is/image/VitaminShoppe/TRT-WHRx-766493_HeaderDesktop-1?$WHRX_TRT_SplitLeft_Desktop$");
+            margin-bottom: 10px;
+            ;
 
             .trt_content {
                 width: 823px;
@@ -66,23 +72,30 @@ body {
 
                 }
 
-                div .get-started{
+                .get-started {
                     border-radius: 20px;
                     padding: 15px 68px;
                     color: white;
                     background: #0458AD 0% 0% no-repeat padding-box;
+                    border: none;
+                    margin-bottom: 18px;
+                }
+
+                .trt-subs {
+                    font-size: 12px;
+                    font-family: Lato-Regular;
+                    color: #333333;
+                    margin: 0;
                 }
 
             }
 
-
-
-            .trt-img img {
+            .trt-img_right img {
                 width: 569px;
                 height: 664px;
             }
 
-            .trt-list p{
+            .trt-list p {
                 display: flex;
                 gap: 17.35px;
                 align-items: center;
@@ -90,7 +103,7 @@ body {
             }
 
 
-            .tick-logo {
+            img.tick-logo {
                 width: 25px;
                 height: 25px;
                 background: var(--unnamed-color-ff6900) 0% 0% no-repeat padding-box;
@@ -99,9 +112,289 @@ body {
                 border-radius: 50%;
 
             }
+
+            .offer-box {
+                position: absolute;
+                left: 50%;
+                bottom: 200px;
+                background: #F16E00;
+                border-radius: 6px;
+                border: #F16E00 1px solid;
+                color: white;
+
+                /* width: 365px; */
+                /* height: 97px; */
+                text-align: center;
+                padding: 2px 20px;
+
+                p,
+                h2 {
+                    margin: 3px;
+                }
+            }
+        }
+
+        .legal-sec {
+            margin: 20px;
+
+            .legal-link {
+
+                font: normal normal normal 12px/14px Lato;
+                letter-spacing: 0px;
+                padding: 0;
+                margin: 0;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+
+            h5 {
+                font: normal normal bold 14px Lato;
+                letter-spacing: 0px;
+                margin: 0;
+            }
+
+            .legal-text {
+                letter-spacing: 0;
+                font: normal normal 14px Lato;
+                margin: 0;
+            }
+
+        }
+
+        .symptoms-sec {
+            height: 357px;
+
+            background-image: url("https://s7media.vitaminshoppe.com/is/image/VitaminShoppe/TRT_WHRx_766493_Symptoms-desktop_2?$WHRX_TRT_Symptoms_Desktop$");
+            padding-bottom: 30px;
+            /* margin-bottom: 10px; */
+
+
+            h2 {
+                font-size: 30px;
+                text-align: center;
+                font: normal normal medium 46px/38px Roboto Slab;
+                letter-spacing: 0px;
+                color: #012169;
+                padding: 40px;
+                margin: 0;
+            }
+
+            .symps-cont {
+                margin-left: 348px;
+                margin-bottom: 30px;
+                display: grid;
+                /* grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+                gap: 20px; */
+                grid-template-columns: repeat(4, 1fr);
+
+                .symp {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    p {
+                        margin: 10px 0;
+                    }
+
+                }
+
+
+
+                .tick {
+                    width: 25px;
+                    height: 25px;
+                    background: var(--unnamed-color-ff6900) 0% 0% no-repeat padding-box;
+                    background: #FF6900 0% 0% no-repeat padding-box;
+                    opacity: 1;
+                    border-radius: 50%;
+                }
+            }
+
+            .get-btn {
+                border-radius: 6px;
+                padding: 15px 68px;
+                color: white;
+                background: #0458AD;
+                border: none;
+
+            }
+
+            .cta-btn {
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .kayzertex {
+             
+            display: flex;
+            
+
+            .left-pic img {
+                width: 508px;
+                height: 704px;
+            }
+
+            .right-content {
+                padding:20px;
+                /* margin-left: 20px; */
+                background-image: url("https://s7media.vitaminshoppe.com/is/image/VitaminShoppe/TRT-WHRx-766493_HowEffective-desktop-2?$WHRX_TRT_EffectiveRight_Desktop$"); 
+                
+
+
+                h2 {
+                    font: normal normal medium 46px/38px Roboto Slab;
+                    letter-spacing: 0px;
+                    color: #012169;
+                }
+
+                .p-txt {
+                    font: normal normal bold 17px Lato;
+                    letter-spacing: 0px;
+                    color: #012169;
+                }
+
+                .cont-list {
+                    display: flex;
+                    gap: 50px;
+                    margin-bottom: 30px;
+                }
+
+
+                /* .kayz-list{
+                    padding-left: 70px;
+                } */
+
+
+                /* .kayz-list p{
+                        padding: 15px, 0;   
+                        display: flex;
+                        gap: 20px;
+                        align-items: center;
+                        justify-content: center; */
+
+                /* span {
+                            font: normal normal normal 20px/26px Lato;
+                            letter-spacing: 0px;
+                            color: #012169;
+                        } */
+                /* } */
+
+
+                    .quali-btn button {
+                        border-radius: 6px;
+                        padding: 15px 68px;
+                        color: white;
+                        background: #0458AD;
+                        border: none;
+                    }
+                
+            }
+
         }
 
 
+        .wingman-sec{
+            padding: 20px;
+            h2{
+                text-align: center;
+                color:#012269;
+
+            }
+
+            .cards{
+                display: flex;
+                /* grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); */
+                
+                gap: 20px;
+
+                .card{
+                    /* margin:0;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 5px; */
+                    width: 300px;
+                    padding:12px;
+                    border-radius: 10px;
+                    .product{
+                        color: #012169;
+                        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+                    }
+
+                    
+                    button{
+                        color: white;
+                        background: #0458AD;
+                        border-radius: 5px;
+                        border: none;
+                        padding: 10px;
+                    }
+                }
+
+                .card img{
+                    width:100%;
+                    border-radius: 8px;
+                     margin-bottom: 10px;
+                }
+
+                /* .card .product{
+                    color: #012169;
+                } */
+
+
+            }
+
+            
+
+
+            
+
+
+            
+        }
     }
 
+}
+
+
+
+
+
+.tick {
+    width: 25px;
+    height: 25px;
+    background: var(--unnamed-color-ff6900) 0% 0% no-repeat padding-box;
+    background: #FF6900 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 50%;
+
+}
+
+.kayz-list {
+    padding-left: 70px;
+
+}
+
+.kayz-list p {
+    padding: 10px, 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 15px;
+
+
+
+    span {
+        font: normal normal normal 20px/26px Lato;
+        letter-spacing: 0px;
+        color: #012169;
+    }
 }
