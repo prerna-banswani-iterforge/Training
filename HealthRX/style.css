@@ -24,8 +24,6 @@ body {
                 height: 122px;
                 align-self: center;
 
-
-
             }
         }
 
@@ -230,9 +228,9 @@ body {
         }
 
         .kayzertex {
-             
+
             display: flex;
-            
+
 
             .left-pic img {
                 width: 508px;
@@ -240,10 +238,10 @@ body {
             }
 
             .right-content {
-                padding:20px;
+                padding: 20px;
                 /* margin-left: 20px; */
-                background-image: url("https://s7media.vitaminshoppe.com/is/image/VitaminShoppe/TRT-WHRx-766493_HowEffective-desktop-2?$WHRX_TRT_EffectiveRight_Desktop$"); 
-                
+                background-image: url("https://s7media.vitaminshoppe.com/is/image/VitaminShoppe/TRT-WHRx-766493_HowEffective-desktop-2?$WHRX_TRT_EffectiveRight_Desktop$");
+
 
 
                 h2 {
@@ -285,63 +283,69 @@ body {
                 /* } */
 
 
-                    .quali-btn button {
-                        border-radius: 6px;
-                        padding: 15px 68px;
-                        color: white;
-                        background: #0458AD;
-                        border: none;
-                    }
-                
+                .quali-btn button {
+                    border-radius: 6px;
+                    padding: 15px 68px;
+                    color: white;
+                    background: #0458AD;
+                    border: none;
+                }
+
             }
 
         }
 
 
-        .wingman-sec{
+        .wingman-sec {
             padding: 20px;
-            h2{
+
+            h2 {
                 text-align: center;
-                color:#012269;
+                color: #012269;
 
             }
 
-            .cards{
+            .cards {
                 display: flex;
                 /* grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); */
-                
+
                 gap: 20px;
 
-                .card{
+                .card {
                     /* margin:0;
                     display: flex;
                     flex-direction: column;
                     padding: 5px; */
                     width: 300px;
-                    padding:12px;
+                    padding: 12px;
                     border-radius: 10px;
-                    .product{
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+
+                    .product {
                         color: #012169;
                         display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+                    flex-direction: column;
+                    flex-grow: 1;
                     }
 
-                    
-                    button{
+
+                    button {
                         color: white;
                         background: #0458AD;
                         border-radius: 5px;
                         border: none;
                         padding: 10px;
+                        width: fit-content
+
                     }
                 }
 
-                .card img{
-                    width:100%;
+                .card img {
+                    width: 100%;
                     border-radius: 8px;
-                     margin-bottom: 10px;
+                    margin-bottom: 10px;
                 }
 
                 /* .card .product{
@@ -351,12 +355,66 @@ body {
 
             }
 
+
+
+
+
+
+
+
+        }
+
+
+        .safety-info{
+            padding: 20px;
+            background: #FEEBDC;
             
 
+            h2{
+                font-size: 46px;
+                color: #012269;
+                text-align: center;
 
+                
+            }
+                p{
+                    margin-bottom: 50px;
+                }
+
+                p .blu-txt{
+                    color:#012169;
+                }
+
+                .safety-box{
+                    /* position: relative; */
+                    display: flex;
+                    gap: 30px;
+                    justify-content: center;
+                    align-items: center;
+                    
+
+                    .safety-cont{
+                        position: relative;
+                        padding: 50px;
+                        width: 250px;
+                        border-radius: 8px;
+                        flex-grow: 1;
+
+                    display: flex;
+                    flex-direction: column;
+                    background: white;
+                    img{
+                        position: absolute;
+                        width: 70px;
+                        height: 70px;
+                        top: -35px;
+                        right: 168px;
+
+                    }
+                }
+                }
+                
             
-
-
             
         }
     }
@@ -398,3 +456,34 @@ body {
         color: #012169;
     }
 }
+
+
+
+/* @media screen and (max-width : 768px) {
+
+    .page{
+
+        div.RXlogo-mob {
+            background: red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            width: 100%;
+
+            img.logo-mob {
+                /* position: absolute; */
+                /* max-width: 100%; */
+                width: 100%; 
+                height: 122px;
+                align-self: center;
+                
+
+
+
+            }
+        }
+    }
+
+} */
