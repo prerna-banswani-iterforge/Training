@@ -15,17 +15,26 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             margin-bottom: 20px;
 
             img.logo {
                 /* position: absolute; */
-                max-width: 1440px;
+                max-width: 100%;
                 width: 543px;
                 height: 122px;
                 align-self: center;
 
+
             }
+
+            img.logo-mob {
+                display: none;
+            }
+
         }
+
+
 
         .sub-header {
             background: #F16E00 0% 0% no-repeat padding-box;
@@ -35,25 +44,65 @@ body {
             justify-content: center;
             gap: 22px;
 
-        }
 
-        .sub-header button {
-            border: none;
-            background: #F16E00;
-            color: white;
+            button {
+                border: none;
+                background: #F16E00;
+                color: white;
+
+                @media (max-width: 768px) {
+                    margin: 0;
+                    padding: 5px;
+                    border-bottom: 1px solid white;
+                    width: 90%;
+                }
+            }
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+                padding-bottom: 0;
+                width: 100%;
+                box-sizing: border-box;
+            }
         }
 
         .trt {
             display: flex;
             position: relative;
             gap: 32px;
+            align-items: center;
             background-image: url("https://s7media.vitaminshoppe.com/is/image/VitaminShoppe/TRT-WHRx-766493_HeaderDesktop-1?$WHRX_TRT_SplitLeft_Desktop$");
             margin-bottom: 10px;
-            ;
+
+            @media (max-width: 768px) {
+                background-image: url("https://s7media.vitaminshoppe.com/is/image/VitaminShoppe/TRT-WHRx-766493_HeaderMobile_top?$WHRX_TRT_SplitLeft_Mobile$");
+
+                flex-direction: column;
+                gap: 20px;
+                /* text-align: center; */
+
+                /* padding: 20px; */
+            }
 
             .trt_content {
                 width: 823px;
                 margin-left: 70px;
+
+                @media (max-width:768px) {
+                    padding: 20px;
+                    margin: 0;
+                    max-width: 100%;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+
+
 
                 h2 {
                     text-align: left;
@@ -61,6 +110,7 @@ body {
                     letter-spacing: 0px;
                     color: #012269;
                     margin-bottom: 25px;
+
                 }
 
                 p {
@@ -88,10 +138,22 @@ body {
 
             }
 
-            .trt-img_right img {
-                width: 569px;
-                height: 664px;
+            .trt_img_right img {
+
+                .right-desk {
+                    width: 569px;
+                    height: 664px;
+                    display: block;
+                }
+
+                @media (max-width:768px) {
+                    max-width: 100%;
+                    display: block;
+                    height: auto;
+                }
             }
+
+
 
             .trt-list p {
                 display: flex;
@@ -112,9 +174,10 @@ body {
             }
 
             .offer-box {
+                width: fit-content;
                 position: absolute;
                 left: 50%;
-                bottom: 200px;
+                bottom: 120px;
                 background: #F16E00;
                 border-radius: 6px;
                 border: #F16E00 1px solid;
@@ -124,16 +187,28 @@ body {
                 /* height: 97px; */
                 text-align: center;
                 padding: 2px 20px;
+                /* transform: translate(-50%); */
+
 
                 p,
                 h2 {
                     margin: 3px;
                 }
+
+                @media (max-width: 768px) {
+                    transform: translate(-50%);
+                }
+
             }
         }
 
         .legal-sec {
             margin: 20px;
+
+            @media (max-width: 768px) {
+                /* padding: 40px; */
+                margin: 20px;
+            }
 
             .legal-link {
 
@@ -162,11 +237,21 @@ body {
         }
 
         .symptoms-sec {
-            height: 357px;
+            /* height: 357px; */
 
             background-image: url("https://s7media.vitaminshoppe.com/is/image/VitaminShoppe/TRT_WHRx_766493_Symptoms-desktop_2?$WHRX_TRT_Symptoms_Desktop$");
             padding-bottom: 30px;
+
             /* margin-bottom: 10px; */
+
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                background-repeat: no-repeat;
+                padding-bottom: 0;
+                margin-bottom: 20px;
+                background-size: cover;
+            }
 
 
             h2 {
@@ -177,6 +262,10 @@ body {
                 color: #012169;
                 padding: 40px;
                 margin: 0;
+
+                @media (max-width: 768px) {
+                    padding: 20px;
+                }
             }
 
             .symps-cont {
@@ -187,12 +276,22 @@ body {
                 gap: 20px; */
                 grid-template-columns: repeat(4, 1fr);
 
+                @media (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+
+                }
+
                 .symp {
                     display: flex;
                     align-items: center;
                     gap: 10px;
 
                     p {
+                        @media (max-width: 768px) {
+                            font-size: 15px;
+                        }
+
                         margin: 10px 0;
                     }
 
@@ -227,17 +326,32 @@ body {
             }
         }
 
+        /* Kayzertex */
         .kayzertex {
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
 
             display: flex;
+            /* padding: 20px; */
 
 
             .left-pic img {
-                width: 508px;
-                height: 704px;
+                width: 100%;
+                /* height: 704px; */
+                display: block;
             }
 
             .right-content {
+                @media (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
                 padding: 20px;
                 /* margin-left: 20px; */
                 background-image: url("https://s7media.vitaminshoppe.com/is/image/VitaminShoppe/TRT-WHRx-766493_HowEffective-desktop-2?$WHRX_TRT_EffectiveRight_Desktop$");
@@ -260,7 +374,17 @@ body {
                     display: flex;
                     gap: 50px;
                     margin-bottom: 30px;
+                    width: 100%;
+
+                    @media (max-width: 768px) {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0;
+                        margin: 0;
+                    }
                 }
+
+
 
 
                 /* .kayz-list{
@@ -289,6 +413,10 @@ body {
                     color: white;
                     background: #0458AD;
                     border: none;
+
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
                 }
 
             }
@@ -297,7 +425,10 @@ body {
 
 
         .wingman-sec {
-            padding: 20px;
+            /* padding: 20px; */
+            /* width: 100%; */
+            margin: 30px;
+            box-sizing: border-box;
 
             h2 {
                 text-align: center;
@@ -306,29 +437,55 @@ body {
             }
 
             .cards {
+
+                @media (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    
+                }
+
                 display: flex;
                 /* grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); */
 
                 gap: 20px;
 
                 .card {
+
+                    @media (max-width: 768px) {
+                        /* width: 100%; */
+                        align-items: center;
+                        margin: 0;
+                        text-align: center;
+                        padding: 0;
+                    }
+
                     /* margin:0;
                     display: flex;
                     flex-direction: column;
                     padding: 5px; */
                     width: 300px;
-                    padding: 12px;
+                    /* padding: 12px; */
                     border-radius: 10px;
                     display: flex;
                     flex-direction: column;
                     flex-grow: 1;
+                    width: 100%;
 
                     .product {
                         color: #012169;
                         display: flex;
-                    flex-direction: column;
-                    flex-grow: 1;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        font-size: 20px;
                     }
+
+                    /* .desc{
+                        @media (max-width: 768px){
+                            text-align: center;
+                        }
+                    } */
 
 
                     button {
@@ -338,12 +495,11 @@ body {
                         border: none;
                         padding: 10px;
                         width: fit-content
-
                     }
                 }
 
                 .card img {
-                    width: 100%;
+                    width: 90%;
                     border-radius: 8px;
                     margin-bottom: 10px;
                 }
@@ -365,57 +521,95 @@ body {
         }
 
 
-        .safety-info{
+        .safety-info {
             padding: 20px;
             background: #FEEBDC;
-            
 
-            h2{
+            @media (max-width: 768px){
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 20px;
+            }
+
+
+            h2 {
                 font-size: 46px;
                 color: #012269;
                 text-align: center;
 
-                
+                @media (max-width: 768px){
+                    margin: 0;
+                    font-size: 26px;
+                }
+
+
             }
-                p{
-                    margin-bottom: 50px;
-                }
 
-                p .blu-txt{
-                    color:#012169;
-                }
+            p {
+                margin-bottom: 50px;
+            }
 
-                .safety-box{
-                    /* position: relative; */
+            p .blu-txt {
+                color: #012169;
+            }
+
+            .safety-box {
+                /* background: red;  */
+
+                @media (max-width: 768px) {
                     display: flex;
-                    gap: 30px;
-                    justify-content: center;
-                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 20px;
                     
+                }
+                /* position: relative; */
+                display: flex;
+                gap: 30px;
+                justify-content: center;
+                align-items: center;
 
-                    .safety-cont{
-                        position: relative;
-                        padding: 50px;
-                        width: 250px;
-                        border-radius: 8px;
-                        flex-grow: 1;
+
+                .safety-cont {
+                    /* background: blue; */
+                    @media (max-width: 768px) {
+                        width: 50%;
+                        box-sizing: border-box; 
+                        height: fit-content;
+                        margin-bottom: 20px;
+                        /* box-sizing: border   ; */
+                    }
+                    position: relative;
+                    padding: 50px;
+                    /* width: 250px; */
+                    width: 100%;
+                    border-radius: 8px;
+                    flex-grow: 1;
 
                     display: flex;
                     flex-direction: column;
                     background: white;
-                    img{
+
+                    img {
+
+                        @media (max-width: 768px){
+                            /* transform: translate(-151%); */
+                        }
                         position: absolute;
                         width: 70px;
                         height: 70px;
-                        top: -35px;
-                        right: 168px;
-
+                        /* top: -35px;
+                        right: 168px; */
+                        top: -32px;
+                        right: 41%;
                     }
                 }
-                }
-                
-            
-            
+            }
+
+
+
         }
     }
 
@@ -438,10 +632,23 @@ body {
 .kayz-list {
     padding-left: 70px;
 
+    @media (max-width: 768px) {
+        padding-left: 7%;
+
+    }
+
 }
 
 .kayz-list p {
-    padding: 10px, 0;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+        align-items: flex-start;
+
+    }
+
+    padding: 10px,
+    0;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -459,31 +666,12 @@ body {
 
 
 
-/* @media screen and (max-width : 768px) {
+@media screen and (max-width : 768px) {
+    body {
+        max-width: 100%;
 
-    .page{
-
-        div.RXlogo-mob {
-            background: red;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            width: 100%;
-
-            img.logo-mob {
-                /* position: absolute; */
-                /* max-width: 100%; */
-                width: 100%; 
-                height: 122px;
-                align-self: center;
-                
-
-
-
-            }
-        }
+        page {}
     }
 
-} */
+
+}
