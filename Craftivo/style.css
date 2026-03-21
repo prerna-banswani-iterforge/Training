@@ -248,7 +248,8 @@ body {
 
 .aboutMe-txt-top {
     text-align: center;
-    margin: 32px 102px;
+    margin: 0 auto;
+    max-width:800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -273,7 +274,7 @@ body {
 }
 
 .aboutMe-desc {
-    padding: 0 18px;
+    /* padding: 0 18px; */
     font-size: 18px;
     line-height: 1.8;
     color: color-mix(in srgb, var(--default-color), transparent 25%);
@@ -546,6 +547,14 @@ body {
 }
 
 @media (max-width: 768px) {
+    .aboutMe-sec{
+        padding: 12px;
+    }
+
+    aboutMe-txt-top{
+        padding: 0 20px;
+    }
+
     .aboutMe-txt-top h2 {
         font-size: 36px;
     }
@@ -672,6 +681,7 @@ body {
 
     .detail-text strong {
         font-size: 13px;
+        font-weight: 700;
     }
 }
 
@@ -752,6 +762,11 @@ body {
     box-sizing: border-box;
 }
 
+.resume-content-left{
+    width: 50%;
+    padding: 10px;
+}
+
 
 
 .resume-txt-top {
@@ -787,13 +802,6 @@ body {
     text-align: center;
 }
 
-
-
-.resume-desc{
-    
-}
-
-
 .section-tag {
     display: inline-block;
     background:
@@ -823,14 +831,14 @@ body {
     font-size: 1rem;
     line-height: 1.7;
     color: color-mix(in srgb, #d9d9d9, transparent 35%);
-    margin: 0;
+    margin: 0 0 10px 0;
 }
 
 .resume-card-section{
     display: flex;
     flex-direction: column;
-    gap:20px;
-    align-items: center;
+    gap: 20px;
+    align-items: flex-start;
 
     
 
@@ -839,7 +847,7 @@ body {
 .resume-card {
     
     box-sizing: border-box;
-    width: 80%;
+    width: 90%;
     /* background: linear-gradient(135deg, #1c1c1c,
  color-mix(in srgb, #ff4d4f, transparent 95%)); */
  background:#1c1c1c;
@@ -848,6 +856,7 @@ body {
     /* margin-bottom: 16px; */
     border: 1px solid rgba(255, 255, 255, 0.06);
     transition: border-color 0.3s;
+    border: 1px solid #ff4d4f;
 }
 
 .resume-card:hover {
@@ -915,6 +924,14 @@ body {
     padding: 0.2rem 0.8rem;
     border-radius: 12px;
     margin-bottom: 1rem;
+}
+
+.resume-degree{
+    font-size: 0.6rem;
+    color:  color-mix(in srgb, #d9d9d9, transparent 40%);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1em;
 }
 
 .resume-card-desc {
@@ -1013,4 +1030,71 @@ body {
     padding: 3px 10px;
     border-radius: 20px;
     flex-shrink: 0;
+}
+
+
+@meida (max-width: 1024px){
+    .resume-content{
+        margin:32px;
+    }
+}
+
+@media (max-width: 768px){
+    .resume-section{
+        padding:20px;
+        /* align-items: center; */
+    }
+
+    .resume-content{
+        flex-direction: column;  /* stack left and right */
+        padding: 30px 15px;
+        gap: 40px;
+    }
+
+    .resume-content-left,
+    .resume-content-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .resume-card-section{
+        align-items: center;
+    }
+
+    .resume-left-heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .resume-card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:2px
+    }
+
+    .resume-badge.current{
+        display: none;
+    }
+
+    .resume-card-header{
+        flex-direction: column;
+    }
+
+    .timeline-award {
+        width:80%;
+    }
+
+    .certicates-list{
+        width: 80%;
+    }
+    .cert-item{
+        flex-direction: column;
+        align-items: flex-start;
+        gap:7px;
+        /* width:80% */
+    }
 }
